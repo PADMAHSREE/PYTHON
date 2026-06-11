@@ -1,0 +1,39 @@
+col="HITS"
+class AIML:
+    dept ="A"
+    def set_dim(self,a,b,c,d):
+        self.m1=a 
+        self.m2=b 
+        self.m3=c 
+        self.name=d 
+    def display(self):
+        print("1.NAME:",self.name)
+        print("2.MARKS:",(self.m1+self.m2+self.m3)//3)
+        print("3.DEPT:",AIML.dept)
+        print("4.college:",col)
+        print()
+class IT:
+    dept ="B"
+    def set_dim(self,a,b,c,d):
+        self.m1=a 
+        self.m2=b 
+        self.m3=c 
+        self.name=d 
+    def display(self):
+        print("1.NAME:",self.name)
+        print("2.MARKS:",(self.m1+self.m2+self.m3)//3)
+        print("3.DEPT:",IT.dept)
+        print("4.college:",col)
+        print()
+s1=AIML()
+s2=AIML()
+c1=IT()
+c2=IT()
+s1.set_dim(20,30,40,"SANZ")
+s1.display()
+s2.set_dim(45,86,46,"ANU")
+s2.display()
+c1.set_dim(45,76,23,"SUJU")
+c1.display()
+c2.set_dim(90,78,89,"SURYA")
+c2.display()
