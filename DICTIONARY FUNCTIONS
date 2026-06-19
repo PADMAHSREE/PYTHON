@@ -1,0 +1,27 @@
+a=["123","445","765"]
+b=list(map(int,a))
+print(b)
+
+l=["apple","orange","grapes"]
+b=list(map(lambda x:x.upper(),l))
+print(b)
+
+b=list(map(len,l))
+print(b)
+
+d=[342,678,285]
+b=list(map(lambda y:y+2,d))
+print(b)
+
+f=[23,56,87]
+e=[98,43,76]
+b=list(map(lambda w,z:w+z,e,f))
+print(b)
+
+g={'A':'sanz','B':'jai','C':'seetha'}
+b=dict(map(lambda x:(x[0],x[1].upper()),g.items()))
+print(b)
+
+h={'A':34,'B':67,'C':76}
+b=dict(map(lambda x:(x[0],(x[1]//10)+x[1]),h.items()))
+print(b)
