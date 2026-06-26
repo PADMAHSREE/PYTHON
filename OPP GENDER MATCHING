@@ -1,0 +1,14 @@
+name=["sanz","gowtham","virat","sachin","ronald","saniya","sindhu","mithali"]
+gender=["m","m","m","m","m","f","f","f"]
+female=[]
+male=[]
+for i in range(len(gender)):
+    if gender[i]=="m":
+        male.append(name[i])
+    else:
+        female.append(name[i])
+c=1
+for i in range(len(male)):
+    for j in range(len(female)):
+        print("Team {} : {} and {}".format(c,male[i],female[j]))
+        c=c+1
