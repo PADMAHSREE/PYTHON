@@ -1,0 +1,7 @@
+import heapq
+a=[12,65,48,32,75]
+x=[]
+for i in a:
+    heapq.heappush(x,-i)
+for i in range(len(a)):
+    print( -heapq.heappop(x),end=" ")
